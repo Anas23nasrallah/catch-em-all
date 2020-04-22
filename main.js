@@ -9,7 +9,7 @@ the game by connecting the other modules */
 
 const INFO_MSG = 'This Game was Created by Ananas' + 
                 '\n You can find the full code on Github:' +
-                ' Anas23Nasrallah';
+                ' Anas23nasrallah/catch-em-all';
 const LOSS_MSG = 'You LOST!! \n Keep practicing';
 
 const playModule = PlayModule();
