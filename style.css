@@ -1,0 +1,124 @@
+/*
+Author: Anas Nasrallah.
+Purpose: Just for fun.
+Date: 22.04.20
+*/
+
+#main-container{
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-areas: 
+    "h h h h h h h h h h h h h h h h"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "b b b b b b b b b b b b b b b b"
+    "f f f f f f f f f f f f f f f f"; 
+}
+
+#main{
+    background-color: #C4E0F9;
+    background-image: url('catchemall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    grid-area: b;    
+}
+
+#header{
+    grid-area: h;
+    display: grid;
+    grid-template-areas: 
+    "time level score togo";
+    background-color: #00A6ED;
+}
+
+#footer{
+    display: grid;
+    grid-template-areas: 
+    "restart start info";
+    grid-area: f;
+    background-color: #E3170A;
+}
+
+#icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: #FF6542;
+}
+
+#level{
+    align-self: center;
+    justify-self: center;
+    grid-area: level;
+}
+
+#score{
+    align-self: center;
+    justify-self: center;
+    grid-area: score;
+}
+
+#time{
+    align-self: center;
+    justify-self: center;
+    grid-area: time;
+}
+
+#toGo{
+    align-self: center;
+    justify-self: center;
+    grid-area: togo;
+}
+
+#restart{
+    grid-area: restart;
+    align-self: center;
+    justify-self: center;
+}
+
+#start{
+    align-self: center;
+    justify-self: center;
+    grid-area: start;
+}
+
+#info{
+    align-self: center;
+    justify-self: center;
+    grid-area: info;
+}
+
+.btn{
+    color: #00A6ED;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00A6ED;
+    border-radius: 9%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn:hover {
+	background-color:white;
+}
+
+.btn:active {
+	position:relative;
+	top:2px;
+}
+
+.head{
+    font-family: 'Orbitron', sans-serif;
+}

@@ -1,0 +1,47 @@
+<!--
+Author: Anas Nasrallah.
+Purpose: Just for fun.
+Date: 22.04.20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Catch'em all</title>
+    <link rel = "icon" href = "atom.jpg" type = "image/x-icon"> 
+</head>
+
+<body>
+
+    <div id='main-container'>
+        <div id='header'></div>
+        <div id='main'></div>
+        <div id='footer'>
+            <div id='restart' class='btn'><i class="fas fa-redo fa-2x"></i></div>
+            <div id='start' class='btn'><i class="fas fa-play fa-2x"></i></div>
+            <div id='info' class='btn'><i class="fas fa-atom fa-2x"></i></div>
+        </div>
+    </div>
+
+    <script id="head-temp" type="text/x-handlebars-template">
+        <div id='time' class='head'>Remaining Time: {{time}}</div>
+        <div id='level'class='head'>Level: {{level}}</div>
+        <div id='toGo' class='head'>To Go: {{togo}}</div>
+        <div id='score' class='head'>Score: {{score}}</div>
+    </script>
+
+    <script src="logic.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
